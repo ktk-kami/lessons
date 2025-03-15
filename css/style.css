@@ -164,3 +164,9 @@ li {
     margin: 44px 106px 0;
     display: inline-block;
 }
+
+.voices__color {
+    background-color: #F0F0F0;
+    height: 480px;
+    margin: -480px;
+}
