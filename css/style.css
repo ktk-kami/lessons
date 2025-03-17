@@ -1,7 +1,149 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: wrap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: wrap;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --font: "Montserrat", sans-serif;
+}
+
+.investments {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  margin: 47px 19px 0 22px;
+}
+
+.investments__title {
+  font: 600 24px/29px var(--font);
+}
+
+.investments__list {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20.14px;
+}
+
+.investments__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 312px;
+  padding: 27.77px 7.21px;
+  border-radius: 5px;
+
+  &:nth-child(1) {
+    &:hover {
+      box-shadow: 0 4px 8px #575756;
+      .investments__link {
+        border: 2px solid #575756;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    &:hover {
+      box-shadow: 0 4px 8px #575756;
+      .investments__link {
+        border: 2px solid #575756;
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    &:hover {
+      box-shadow: 0 4px 8px #575756;
+      .investments__link {
+        border: 2px solid #575756;
+      }
+    }
+  }
+
+  &:nth-child(4) {
+    &:hover {
+      box-shadow: 0 4px 8px #575756;
+      .investments__link {
+        border: 2px solid #575756;
+      }
+    }
+    .investments__logo {
+      margin-top: 13px;
+    }
+    .investments__list-title {
+      margin-top: 23px;
+    }
+  }
+}
+
+.investments__date {
+  font: 600 12px/1 var(--font);
+  color: #BE1736;
+  margin-right: 23px;
+  align-self: flex-end;
+}
+
+.investments__logo {
+  width: 125px;
+  margin-top: 20px;
+}
+
+.investments__list-title {
+  font: 600 16px/20px var(--font);
+  margin-top: 30px;
+  width: 180px;
+  text-align: center;
+}
+
+.investments__item div {
+  font: 400 14px/20px var(--font);
+  align-self: flex-start;
+}
+
+.investments__link {
+  font: 400 14px/1 var(--font);
+  border: 2px solid transparent;
+  color: #000;
+  padding: 16.5px 88.1px;
+  margin-top: 45px;
+}
+
+.investments__btn {
+  font: 400 14px/17px var(--font);
+  border: 2px solid #575756;
+  width: max-content;
+  padding: 16.5px 96.66px;
+  background-color: #FFF;
+  margin-top: 66.5px;
+  align-self: center;
+}
+
+/*style section "benefits"*/
+.benefits {
+  color: #000;
+  margin-top: 100px;
+  display: flex;
 }
