@@ -34,16 +34,6 @@ li {
   --font: "Montserrat", sans-serif;
 }
 
-/*.content::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/triangle-1.svg");
-  height: 97px;
-  width: 119px;
-  right: 30px;
-  top: 0;
-}*/
-
 .investments {
   color: #000;
   display: flex;
