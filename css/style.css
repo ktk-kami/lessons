@@ -26,21 +26,56 @@
   --font: "Roboto", sans-serif;
 }
 
+.content {
+  background-color: #F2F8F6;
+}
+
 .about {
   color: #26292E;
-  width: 1280px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  gap: 42px;
+}
+
+.about__squares {
+  display: inline-block;
+} 
+
+.about__squares-white {
+  background-color: #FFF;
+  width: 446px;
+  height: 437px;
+  position: relative;
+  top: 67px;
+  right: 33px;
+}
+
+.about__squares-green {
+  width: 446px;
+  height: 437px;
+  border: 20px solid #3D8455;
+  position: absolute;
+  top: 115px;
+}
+
+.about__squares-plant {
+  width: 222px;
+  height: 576px;
+  position: relative;
+  left: 112px;
+  top: -423px;
 }
 
 .about__title {
   font: 500 50px/57px var(--font);
+  margin-top: 115px;
 }
 
 .about__desc {
   font: 400 20px/140% var(--font);
   margin-top: 19px;
   width: 550px;
+  margin-right: 39px;
 }
 
 .about__features {
