@@ -52,64 +52,121 @@ li {
 .leadership__title {
   font: 600 40px/140% var(--font);
   margin-top: 100px;
-}
 
-hr {
-  border: 4px solid #2B9AD6;
-  width: 100px;
-  margin-top: 26px;
+  &::after {
+    content: "";
+    border: 4px solid #2B9AD6;
+    width: 100px;
+    margin: 26px 53px 0 53px;
+    display: block;
+  }
+  
 }
 
 .leadership__list {
-  margin-top: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  width: 1017px;
-  gap: 78px 156px;
+  max-width: 1077px;
+  gap: 102px 69px;
+  padding: 60px 30px 100px 30px;
 
-  :nth-child(1):hover {
-    .leadership__img {
-      background: center / cover url("../img/lead-1-background.jpg") no-repeat;
-      width: 293px;
-      height: 361px;
+   *:hover {
+    .leadership__logo, .leadership__img {
+      opacity: 0;
     }
+
+    .leadership__logo-hover, .leadership__img-hover {
+      opacity: 1;
+    }
+
+    .leadership__name, .leadership__prof {
+      color: #FFF;
+    }
+  }
+  
+  li:nth-child(1):hover {
+    background: center / cover url("../img/lead-1-background.jpg") no-repeat;
+  }
+
+  li:nth-child(2):hover {
+    background: center / cover url("../img/lead-2-background.jpg") no-repeat;
+  }
+
+ li:nth-child(3):hover {
+    background: center / cover url("../img/lead-3-background.jpg") no-repeat;
+  }
+
+  li:nth-child(4):hover {
+    background: center / cover url("../img/lead-4-background.jpg") no-repeat;
+  }
+
+  li:nth-child(5):hover {
+    background: center / cover url("../img/lead-5-background.jpg") no-repeat;
+  }
 }
 
 .leadership__item {
-  width: 235px;
+  width: 293px;
   position: relative;
 }
 
 .leadership__img {
-  position: relative;
   width: 220px;
-  height: 224px;
+  margin: 13px 36px 0 36px;
 }
 
-.leadership__circle {
+.leadership__img-hover {
+  width: 220px;
+  position: absolute;
+  top: 13px;
+  left: 36px;
+  opacity: 0;
+}
+
+.leadership__circle, .leadership__circle-hover {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #194F94;
   position: absolute;
-  top: 159px;
-  left: 149px;
+  top: 172px;
+  left: 185px;
+}
+
+.leadership__ico, .leadership__ico-hover {
+  position: absolute;
+  right: 73px;
+}
+
+.leadership__circle {
+  background-color: #194F94;
+}
+
+.leadership__circle-hover {
+  background-color: #FF5E00;
 }
 
 .leadership__ico {
-  position: absolute;
   width: 20px;
-  height: 20px;
-  top: 172px;
-  left: 165px;
+  top: 185px;
 }
+
+.leadership__ico-hover {
+  width: 24px;
+  top: 187px;
+}
+
+.leadership__logo-hover {
+  opacity: 0;
+}
+
 
 .leadership__name {
   color: #194F94;
   font: 700 24px/140% var(--font);
   display: inline-block;
   margin-top: 20px;
+  margin-left: 27px;
 }
 
 .leadership__prof {
@@ -117,4 +174,6 @@ hr {
   font: 400 17px/150% var(--font);
   display: inline-block;
   width: 215px;
+  margin-left: 27px;
+  margin-bottom: 16px;
 }
