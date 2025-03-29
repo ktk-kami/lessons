@@ -2,10 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Lesson 8</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    
+
+<main class="content">
+  <section class="inf">
+    <h2 class="inf__title">Форма заявки на работу в зоопарке</h2>
+    <h3 class="inf__desc">Пожалуйста, заполните форму. Обязательные поля помечены </h3>
+
+    <form>
+      <fieldset class="inf__contact">
+        <legend class="inf__contact-title">Контактная информация</legend>
+
+        <div class="inf__str"> 
+          <label class="inf__contact-label" for="name">Имя </label>
+          <input class="inf__contact-input" id="name" type="text" required>
+        </div>
+
+        <div class="inf__str">
+          <label class="inf__contact-label" for="telephone">Телефон</label>
+          <input class="inf__contact-input" id="telephone" type="tel">  
+        </div>
+        
+        <div class="inf__str">
+          <label class="inf__contact-label" for="email">Email </label>
+          <input class="inf__contact-input" id="email" type="email" required>
+        </div>
+      </fieldset>
+
+      <fieldset class="inf__pers">
+        <legend class="inf__pers-title">Персональная информация</legend>
+
+        <div class="inf__str"> 
+          <label class="inf__pers-label" for="age">Возраст </label>
+          <input class="inf__pers-input" id="age" type="number" required>
+        </div>
+
+        <div class="inf__str">
+          <label class="inf__pers-label" for="gender">Пол</label>
+          <select class="inf__pers-input" id="gender">
+            <option value="woman">Женщина</option>
+            <option value="man">Мужчина</option>
+          </select>
+        </div>
+
+        <div class="inf__str">
+          <label class="inf__pers-textarea" for="quality">Перечислите личные качества</label>
+          <textarea class="inf__pers-input" rows="5" id="quality"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset class="inf__animal">
+        <legend class="inf__animal-title">Выберите ваших любимых животных</legend>
+
+        <div class="inf__animal-str">
+          <input class="inf__animal-checkbox" id="zebra" type="checkbox" value="zebra">
+          <label class="inf__animal-label" for="zebra">Зебра</label>
+        </div>
+
+        <div class="inf__animal-str">
+          <input class="inf__animal-checkbox" id="cat" type="checkbox" value="cat">
+          <label class="inf__animal-label" for="cat">Кошак</label>
+        </div>
+
+        <div class="inf__animal-str">
+          <input class="inf__animal-checkbox" id="anaconda" type="checkbox" value="anaconda">
+          <label class="inf__animal-label" for="anaconda">Анаконда</label>
+        </div>
+
+        <div class="inf__animal-str">
+          <input class="inf__animal-checkbox" id="person" type="checkbox" value="person">
+          <label class="inf__animal-label" for="person">Человек</label>
+        </div>
+
+        <div class="inf__animal-str">
+          <input class="inf__animal-checkbox" id="elephant" type="checkbox" value="elephant">
+          <label class="inf__animal-label" for="elephant">Слон</label>
+        </div>
+
+        <div class="inf__animal-str">
+          <input class="inf__animal-checkbox" id="antelope" type="checkbox" value="antelope">
+          <label class="inf__animal-label" for="antelope">Антилопа</label>
+        </div>
+
+        <div class="inf__animal-str">
+          <input class="inf__animal-checkbox" id="pigeon" type="checkbox" value="pigeon">
+          <label class="inf__animal-label" for="pigeon">Голубь</label>
+        </div>
+
+        <div class="inf__animal-str">
+          <input class="inf__animal-checkbox" id="crab" type="checkbox" value="crab">
+          <label class="inf__animal-label" for="crab">Краб</label>
+        </div>
+
+      </fieldset>
+
+      <button class="inf__btn" type="submit">Отправить информацию</button>
+    </form>
+
+  </section>
+</main>
+
 </body>
 </html>

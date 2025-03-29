@@ -5,3 +5,93 @@
     outline: 0;
     box-sizing: border-box;
 }
+
+:root {
+  --font: "Roboto", serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.inf {
+  display: flex;
+  flex-direction: column;
+  padding: 70px 70px;
+}
+
+.inf__title {
+  font: 200 100px/120% var(--font);
+}
+
+.inf__desc {
+  font: 100 50px/110% var(--font);
+  font-style: italic;
+  margin-top: 15px;
+}
+
+.inf__desc::after, .inf__contact div:nth-child(2n) .inf__contact-label::after,
+.inf__pers div:nth-child(2) .inf__pers-label::after {
+  content: "*";
+    color: #ff0000;
+}
+
+.inf__contact, .inf__pers, .inf__animal {
+  max-width: 1495px;
+  border: 4px solid #878080;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inf__contact-title, .inf__pers-title, .inf__animal-title {
+  font: 200 54px/110% var(--font);
+  margin-left: 40px;
+}
+
+.inf__contact-label, .inf__pers-label, .inf__animal-label, .inf__pers-textarea {
+  width: 220px;
+  font: 100 40px/110% var(--font);
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.inf__contact-input, .inf__pers-input {
+  width: 600px;
+  border: 4px solid #878080;
+  font: 100 40px/110% var(--font);
+}
+
+.inf__str {
+  margin: 40px;
+}
+
+.inf__pers-textarea {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.inf__animal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.inf__animal-str {
+  display: flex;
+  margin: 30px 0 30px 40px;
+}
+
+.inf__animal-label {
+  padding: 0 20px;
+}
+
+.inf__btn {
+  background-color: #cececee1;
+  font: 100 40px/110% var(--font);
+  padding: 20px;
+  border: 4px solid #878080;
+  margin-top: 40px;
+  display: inline-block;
+}
